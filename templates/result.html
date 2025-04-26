@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Recommendations</title>
-	<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/result.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/result.css') }}" />
 </head>
 <body>
-<div class=page>
-  <h1>Here are your recommendations....</h1>
-  {% for table in tables %}
-    <h2>{{titles[loop.index]}}</h2>
-    {{ table|safe }}
-  {% endfor %}
+<div align="center">
+  <h1 align="center">Here are your recommendations....</h1>
+  {% if message %}
+    <p>{{ message }}</p>
+    <a href="/">Try another movie</a>
+  {% else %}
+    {% for table in tables %}
+      <h2>{{titles[loop.index]}}</h2>
+      {{ table|safe }}
+    {% endfor %}
+    <br>
+    <a href="/">Get Another Recommendation</a>
+  {% endif %}
 </div>
 </body>
 </html>
