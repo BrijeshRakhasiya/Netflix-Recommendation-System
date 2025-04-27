@@ -1,11 +1,25 @@
-# Flask-Netflix-Recommendation-System
-A flask web-app which can be used to get recommendations for a tv-show/movie, the app recommends a list of media according to the input.
+# Netflix Recommendation System
 
-# Screenshot 1 : Main Page 
-Here the user can enter their movie of choice, for example I have entered La Casa De Papel a Spanish Netflix original show.
-![](Screenshots/screenshot1.PNG)
-# Screenshot 2 : Recommendation Page 
-Here the user will get recommendations, for example I recieved Elite(another spanish Netflix original) as my top recommendation 
-![](Screenshots/screenshot2.PNG)
-# -Netflix-Recommendation-System
-# -Netflix-Recommendation-System
+A content-based recommendation system built with Flask that suggests Netflix movies and shows based on user input. This project leverages machine learning techniques to analyze movie metadata and provide personalized recommendations.
+
+## Features
+
+- Content-based filtering using movie metadata such as title, cast, director, genres, and description.
+- Uses cosine similarity to find and recommend similar movies.
+- Simple and user-friendly web interface built with Flask.
+- Easily extensible to include more features or datasets.
+
+
+## Technologies Used
+
+- Python 3.x
+- Flask
+- Pandas
+- NumPy
+- scikit-learn
+- HTML/CSS (for frontend templates)
+
+## Installation
+
+1. **Clone the repository:git clone https://github.com/BrijeshRakhasiya/Netflix-Recommendation-System.git**
+
